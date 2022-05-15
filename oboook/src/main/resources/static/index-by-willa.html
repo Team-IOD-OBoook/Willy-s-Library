@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <title>윌리의 서재 :: main</title>
+    <meta name="title" content="윌리의 서재">
+    <meta name="description" content="전문 성우 연기로 귀깔나게 즐기다, 윌라 오디오북!">
+    <meta name="keywords" content="오디오북, 저자, 클래스, 강연, 교육, 프리미엄 강의, 성우, 강사, 직강">
+    <meta property="og:image:width" content="640">
+    <meta property="og:image:height" content="320">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="윌라(Welaaa)">
+    <meta property="og:description" content="전문 성우 연기로 귀깔나게 즐기다, 윌라 오디오북!">
+    <meta property="og:locale" content="ko_KR">
+    <style data-styled="active" data-styled-version="5.3.5"></style>
+    <link href="css/style-by-willa.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .Snackbar_snackbar-wrapper__ocbPJ {
+            display: flex;
+            align-items: center;
+            margin: 8px;
+            position: fixed;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            transition: opacity .15s, transform .15s;
+            pointer-events: none
+        }
+
+        .Snackbar_snackbar-wrapper-top-center__1Gbfi,
+        .Snackbar_snackbar-wrapper-top-left__kU4xa,
+        .Snackbar_snackbar-wrapper-top-right__2CAmf {
+            top: 8px
+        }
+
+        .Snackbar_snackbar-wrapper-bottom-center__21ghq,
+        .Snackbar_snackbar-wrapper-bottom-left__-7yn0,
+        .Snackbar_snackbar-wrapper-bottom-right__8wQeQ {
+            bottom: 8px
+        }
+
+        .Snackbar_snackbar-wrapper-bottom-left__-7yn0,
+        .Snackbar_snackbar-wrapper-top-left__kU4xa {
+            justify-content: flex-start
+        }
+
+        .Snackbar_snackbar-wrapper-bottom-center__21ghq,
+        .Snackbar_snackbar-wrapper-top-center__1Gbfi {
+            justify-content: center
+        }
+
+        .Snackbar_snackbar-wrapper-bottom-right__8wQeQ,
+        .Snackbar_snackbar-wrapper-top-right__2CAmf {
+            justify-content: flex-end
+        }
+
+        .Snackbar_snackbar__GsYZl {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 4px;
+            min-width: 334px;
+            max-width: 672px;
+            background-color: #333;
+            box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: hsla(0, 0%, 100%, .87);
+            letter-spacing: .25px;
+            line-height: 20px;
+            text-align: left
+        }
+
+        @media (max-width:344px),
+        (max-width:480px) {
+            .Snackbar_snackbar__GsYZl {
+                min-width: 100%
+            }
+        }
+
+        .Snackbar_snackbar__text__1Hx2a {
+            flex-grow: 1;
+            padding: 14px 16px;
+            margin: 0;
+            pointer-events: auto
+        }
+
+        .Snackbar_snackbar__close__NCHgT {
+            flex-shrink: 0;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            padding: 8px;
+            margin: 0 8px 0 0;
+            cursor: pointer;
+            position: relative;
+            pointer-events: auto;
+            -webkit-tap-highlight-color: transparent;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            font-size: 12px;
+            color: hsla(0, 0%, 100%, .87)
+        }
+
+        .Snackbar_snackbar__close__NCHgT:before {
+            content: "";
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0;
+            position: absolute;
+            transition: opacity .12s linear;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        @media (hover:hover) {
+            .Snackbar_snackbar__close__NCHgT:hover:before {
+                opacity: .08
+            }
+        }
+
+        .Snackbar_snackbar-enter__2XoWy,
+        .Snackbar_snackbar-exit-active__38Ts1 {
+            opacity: 0
+        }
+
+        .Snackbar_snackbar-enter-active__2G0jP {
+            opacity: 1
+        }
+
+        .Snackbar_snackbar-enter-top-center__2hv_H,
+        .Snackbar_snackbar-enter-top-left__5McRQ,
+        .Snackbar_snackbar-enter-top-right__3IZID,
+        .Snackbar_snackbar-exit-active-top-center__3MvcF,
+        .Snackbar_snackbar-exit-active-top-left__25M1C,
+        .Snackbar_snackbar-exit-active-top-right__1QPvY {
+            transform: translateY(-16px)
+        }
+
+        .Snackbar_snackbar-enter-bottom-center__KWFO3,
+        .Snackbar_snackbar-enter-bottom-left__21M-k,
+        .Snackbar_snackbar-enter-bottom-right__20sEa,
+        .Snackbar_snackbar-exit-active-bottom-center__oO6Rn,
+        .Snackbar_snackbar-exit-active-bottom-left__2tT-Y,
+        .Snackbar_snackbar-exit-active-bottom-right__GOHKw {
+            transform: translateY(16px)
+        }
+
+        .Snackbar_snackbar-enter-active-bottom-center__2zcYl,
+        .Snackbar_snackbar-enter-active-bottom-left__hXac0,
+        .Snackbar_snackbar-enter-active-bottom-right__2QyBV,
+        .Snackbar_snackbar-enter-active-top-center__sy6SN,
+        .Snackbar_snackbar-enter-active-top-left__2EQ5v,
+        .Snackbar_snackbar-enter-active-top-right__1Jhh8 {
+            transform: translateY(0)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="__next">
+        <div class="">
+            <div class="w-header__web-mypage-side">
+                <div class="w-header__web-mypage-side-overlay">&nbsp;</div>
+                <div class="w-header__web-mypage-side-container">
+                    <div class="w-mypage__user-info">
+                        <div style="position:relative;margin-top:15px;margin-right:15px"><a href=""
+                                class="SideMenu__OpenToAppLink-sc-15vpgyv-0 iRKOmM"><span
+                                    class="SideMenu__OpenToAppIcon-sc-15vpgyv-1 kdrJqC"></span><span
+                                    class="SideMenu__OpenToAppText-sc-15vpgyv-2 kbocTk"><span>윌라 앱으로
+                                        열기</span></span></a>
+                            <div style="position:absolute;right:0;top:0"><button type="button"
+                                    class="w-header__mobile-mypage-side-close">닫기</button></div>
+                        </div><span class="w-mypage__user-info-data">
+                            <div class="w-mypage__user-info-wrapper"><span
+                                    class="w-mypage__user-info-name-wrapper"><span
+                                        class="w-mypage__user-info-name">최민지&nbsp;</span><span
+                                        class="w-mypage__user-info-suffix">님</span></span><span
+                                    style="margin-right: 15px;"><button type="button"
+                                        class="w-mypage-btn__button w-mypage-btn__button--primary"
+                                        style="height: 36px; padding: 4px 18px; line-height: 1; font-size: 14px; margin-bottom: 0px;">쿠폰함</button></span>
+                            </div><span class="w-mypage__user-info-email"><img
+                                    src="/static/images/ic_account-kakaotalk.png"
+                                    style="width: 16px; height: 16px; vertical-align: middle; margin-right: 4px;">joy9124@naver.com</span>
+                        </span>
+                    </div>
+                    <div class="w-header__web-mypage-side-wrap w-header__web-mypage-side-membership">
+                        <div><span class="w-header__web-mypage-side-title">나의 멤버십</span>
+                            <div class="w-header__web-mypage-side-membership-info">
+                                <div class="w-header__web-mypage-side-membership-joined">
+                                    <div class="w-mypage__contents-table-info">
+                                        <div
+                                            class="w-mypage__contents-table-info-item w-mypage-side__contents-table-info-item">
+                                            <div class="w-mypage-side__contents-table-info-label">가입한 멤버십</div>
+                                            <div class="w-mypage-side__contents-table-info-value"><span
+                                                    class="w-mypage__grade-badge--premium">윌라 멤버십</span></div>
+                                        </div>
+                                        <div
+                                            class="w-mypage__contents-table-info-item w-mypage-side__contents-table-info-item">
+                                            <div class="w-mypage-side__contents-table-info-label">구독기간</div>
+                                            <div class="w-mypage-side__contents-table-info-value">2021년 05월 11일 ~ 2022년
+                                                04월 11일</div>
+                                        </div>
+                                        <div
+                                            class="w-mypage__contents-table-info-item w-mypage-side__contents-table-info-item">
+                                            <div class="w-mypage-side__contents-table-info-label">다음 결제일</div>
+                                            <div class="w-mypage-side__contents-table-info-value">2022년 04월 11일</div>
+                                        </div>
+                                        <div
+                                            class="w-mypage__contents-table-info-item w-mypage-side__contents-table-info-item">
+                                            <div class="w-mypage-side__contents-table-info-label">혜택</div>
+                                            <div class="w-mypage-side__contents-table-info-value">멤버십 기간 내 모든 오디오북과 클래스
+                                                무제한 이용</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-header__mobile-mypage-side-menu">
+                        <div class="w-header__mobile-mypage-side-menu-item">
+                            <div class="w-header__mobile-mypage-side-menu-name">윌라 소개</div>
+                            <div class="w-header__mobile-mypage-side-menu-list-box">
+                                <div
+                                    class="w-header__mobile-mypage-side-menu-list w-header__mobile-mypage-side-menu-list-my">
+                                    <a href="/">윌라 소개</a></div>
+                            </div>
+                        </div>
+                        <div class="w-header__mobile-mypage-side-menu-item">
+                            <div class="w-header__mobile-mypage-side-menu-name">클래스</div>
+                            <div class="w-header__mobile-mypage-side-menu-list-box">
+                                <div class="w-header__mobile-mypage-side-menu-list"><a href="/video"
+                                        class="w-header__mobile-mypage-side-menu-list-item-primary">클래스 홈</a><a
+                                        href="/video/course">전체</a><a href="/video/076/hot">윌라 독점</a><a
+                                        href="/video/036/hot">대한민국 명강</a><a href="/video/077/hot">북토크</a><a
+                                        href="/video/007/hot">자기계발</a><a href="/video/022/hot">경제/트렌드</a><a
+                                        href="/video/025/hot">창의/기획/생각법</a><a href="/video/021/hot">리더십</a></div>
+                            </div>
+                        </div>
+                        <div class="w-header__mobile-mypage-side-menu-item">
+                            <div class="w-header__mobile-mypage-side-menu-name">오디오북</div>
+                            <div class="w-header__mobile-mypage-side-menu-list-box">
+                                <div class="w-header__mobile-mypage-side-menu-list"><a href="/audio"
+                                        class="w-header__mobile-mypage-side-menu-list-item-primary">오디오북 홈</a><a
+                                        href="/audio/list">전체</a><a href="/audio/list?ccode=800">이달의 오디오북</a><a
+                                        href="/audio/list?ccode=058">웹소설</a><a href="/audio/list?ccode=028">소설</a><a
+                                        href="/audio/list?ccode=010">인문</a><a href="/audio/list?ccode=011">경제·경영</a><a
+                                        href="/audio/list?ccode=056">어린이</a><a href="/audio/list?ccode=012">자기계발</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-header__mobile-mypage-side-menu-item">
+                            <div class="w-header__mobile-mypage-side-menu-name">마이윌라</div>
+                            <div class="w-header__mobile-mypage-side-menu-list-box">
+                                <div class="w-header__mobile-mypage-side-menu-sub-name">
+                                    <p>콘텐츠 이용현황</p>
+                                </div>
+                                <div
+                                    class="w-header__mobile-mypage-side-menu-list w-header__mobile-mypage-side-menu-list-my">
+                                    <a href="">최근 재생 클래스</a><a href="">내가 찜한 클래스</a><a href="">구매한 클래스</a><a href="">최근
+                                        재생 오디오북</a><a href="">내가 찜한 오디오북</a><a href="">구매한 오디오북</a></div>
+                                <div class="w-header__mobile-mypage-side-menu-sub-name">
+                                    <p>계정 / 구매 관리</p>
+                                </div>
+                                <div
+                                    class="w-header__mobile-mypage-side-menu-list w-header__mobile-mypage-side-menu-list-my">
+                                    <a href="">회원정보</a><a href="">비밀번호 변경하기</a><a href="">나의 멤버십 현황</a><a
+                                        href="">쿠폰함</a><a href="/my/account/withdraw">회원탈퇴</a></div>
+                                <div class="w-header__mobile-mypage-side-menu-sub-name">
+                                    <p>고객 센터</p>
+                                </div>
+                                <div
+                                    class="w-header__mobile-mypage-side-menu-list w-header__mobile-mypage-side-menu-list-my">
+                                    <a href="/support/event">이벤트</a><a href="/my/support/contact">1:1문의</a><a
+                                        href="/support/partnership">제휴 문의</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-header__web-mypage-side-wrap w-header__web-mypage-side-continue"><span
+                                class="w-header__web-mypage-side-title">이어보기<a href="/my"
+                                    class="w-header__web-mypage-side-sub-title">전체보기</a></span>
+                            <div class="w-header__web-mypage-side__w-main-continue">
+                                <div><span class="w-header__web-mypage-side__w-main-continue-title">최근 재생 클래스</span>
+                                    <div class="w-header__web-mypage-side-continue-grid">
+                                        <div class="w-main-continue__grid-item">
+                                            <div class="w-summary"><a href="/video/detail">
+                                                    <div class="w-summary__thumbnail"
+                                                        style="background-image: url(&quot;&quot;);">
+                                                        <p class="w-summary__thumbnail-title"></p><img
+                                                            src="/static/images/icons/play_2.png" alt=""
+                                                            class="w-book-simple__summary__play" style="width: 50px;">
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><span class="w-header__web-mypage-side__w-main-continue-title">최근 재생 오디오북</span>
+                                    <div class="w-header__web-mypage-side-book-list">
+                                        <div class="w-book-simple__content">
+                                            <div class="w-book-simple__grid-item">
+                                                <div class="w-book-simple__summary"><a href="/audio/detail/9857">
+                                                        <div class="w-book-simple__summary-thumbnail"
+                                                            style="background-image: url(&quot;https://static.welaaa.co.kr/images/28001-2-1646621934789.jpg&quot;);">
+                                                            <img src="/static/images/icons/play_2.png" alt=""
+                                                                class="w-book-simple__summary__play"></div>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-header__web-mypage-side-direct-link"><a href="/support/notice">공지사항</a><a
+                                href="/support/event">이벤트</a><a href="/support/faq">자주 묻는 질문</a><a
+                                href="/support/enterprise-promotion">B2B 멤버십 안내</a><a href="/support/partnership">제휴
+                                문의</a></div>
+                    </div><a href="https://smartstore.naver.com/welaaa/category/3b13e5e6f3e14a19b32a887bcaf0ba65?cp=1"
+                        target="_blank" rel="noreferrer">
+                        <div class="w-lnb-banner"><img
+                                src="https://static.welaaa.co.kr/static/banner-web/%E1%84%8B%E1%85%A9%E1%84%83%E1%85%B5%E1%84%8B%E1%85%A9%E1%84%87%E1%85%AE%E1%86%A8%E1%84%8F%E1%85%A1%E1%84%83%E1%85%B3%E1%84%8C%E1%85%B5%E1%84%80%E1%85%A1%E1%86%B8_375x125.jpg">
+                        </div>
+                    </a>
+                    <div class="w-header__web-mypage-btn-logout"><button type="button">로그아웃</button></div>
+                </div>
+            </div>
+            <div class="w-app-container w-audio-index">
+                <div class="Header__Container-sc-1i9o4qe-0 lldKkt">
+                    <div class="w-header__web">
+                        <div class="w-header__web-top-container">
+                            <div class="w-container">
+                                <div class="w-flex-between">
+                                    <div>
+                                        <div class="w-flex w-header__web-top-user"><span
+                                                class="w-header__web-user-img-container"><button
+                                                    class="w-header__web-user-img" aria-label="메뉴버튼"
+                                                    style="background-image: url(&quot;/static/images/ic-bars-naver-green.png&quot;);"></button><span
+                                                    class="w-header__web-user-img-container-user-name">최민지</span><span>님</span><span
+                                                    class="w-mypage__grade-badge--premium">윌라 멤버십</span></span></div>
+                                    </div><a href="/" class="w-header__web-logo">
+                                        <div class="img"></div>
+                                    </a>
+                                    <div>
+                                        <div class="header-cart-icon-pc"><a href="/my/account/cart"><img
+                                                    style="width:40px" src="/static/images/icons/cart.svg"
+                                                    alt="장바구니"></a></div>
+                                        <div class="w-header__web-search"><input type="text"
+                                                class="w-header__web-search-input" placeholder="키워드 혹은 강사/저자를 입력"
+                                                value=""><button type="button"
+                                                class="w-header__web-search-btn button-unstyled"><img
+                                                    src="/static/images/web-ic-search.png" alt="검색"></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-header__web-gnb-container">
+                            <div class="w-container">
+                                <div class="w-flex-between">
+                                    <div>
+                                        <div class="w-flex w-header__web-gnb"><a href="/"
+                                                class="w-header__web-gnb-link">윌라 소개</a><a href="/video"
+                                                class="w-header__web-gnb-link">클래스</a><a href="/audio"
+                                                class="w-header__web-gnb-link">오디오북</a><a href="/my"
+                                                class="w-header__web-gnb-link" data-path="/my">마이윌라</a><span
+                                                class="w-header__web-gnb-bar"></span><button type="button"
+                                                class="w-header__web-gnb-btn button-unstyled"><span>전체메뉴</span></button>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="w-flex"><a href="/support/enterprise-promotion"><span
+                                                    class="w-header__web-snb-link" style="position:relative">B2B 멤버십
+                                                    안내</span></a><span>
+                                                <pre>    </pre></span><a href="/my/account/membership-info"
+                                                class="w-header__web-snb-link">나의 멤버십 현황</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-header__mobile">
+                        <div class="w-flex-between"><button type="button" class="button-unstyled" style="padding:0"><img
+                                    src="/static/images/ic-bars.png" alt="" class="ic-size__40"></button><a href="/">
+                                <div class="w-header__mobile-logo"></div>
+                            </a>
+                            <div style="position:absolute;right:60px"><a href="/my/account/cart"><img style="width:35px"
+                                        src="/static/images/icons/cart.svg" alt=""></a></div><button type="button"
+                                class="button-unstyled" style="padding:0"><img src="/static/images/ic-search.png"
+                                    class="ic-size__40" alt="검색"></button>
+                        </div>
+                        <div class="w-flex-between">
+                            <div class="w-flex w-header__mobile-gnb"><a href="/" class="w-header__mobile-gnb-link">윌라
+                                    소개</a><a href="/video" class="w-header__mobile-gnb-link">클래스</a><a href="/audio"
+                                    class="w-header__mobile-gnb-link on">오디오북</a><a href="/my"
+                                    class="w-header__mobile-gnb-link" data-path="/my">마이윌라</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-content-container">
+                    <div class="w-audio">
+                        <div class="w-audio__content">
+                            <!-- 메인배너 비주얼 슬라이드 -->
+                            <div class="w-audio__visual-slide">
+                                <div class="w-main-banner_slide">
+                                    <div
+                                        class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+                                        <div class="swiper-wrapper"
+                                            style="transition-duration: 0ms; transform: translate3d(-1012px, 0px, 0px);">
+                                            <div class="swiper-slide w-main-visual__slide-item swiper-slide-duplicate swiper-slide-prev"
+                                                data-swiper-slide-index="8" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/support/event/325"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/27813-6-1645489923608.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item swiper-slide-visible swiper-slide-active"
+                                                data-swiper-slide-index="0" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/audio/curation?id=1359"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img
+                                                            class="swiper-lazy swiper-lazy-loaded"
+                                                            src="https://static.welaaa.co.kr/images/28426-6-1648772548677.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item swiper-slide-next"
+                                                data-swiper-slide-index="1" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/video/detail/9913"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28414-6-1648643841318.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="2" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/audio/detail?audioId=9880"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28418-6-1648687185325.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="3" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/audio/detail?audioId=9802"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28424-6-1648717471228.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="4" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/video/detail/9909"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28390-6-1648457303847.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="5" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/audio/detail?audioId=9892"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28409-6-1648624631730.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="6" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/video/detail/9888"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28363-6-1648197241897.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item"
+                                                data-swiper-slide-index="7" style="width: 1012px;"><a
+                                                    href="https://form.typeform.com/to/DRxuT8Vg"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/28338-6-1648113854327.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item swiper-slide-duplicate-prev"
+                                                data-swiper-slide-index="8" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/support/event/325"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img class="swiper-lazy"
+                                                            data-src="https://static.welaaa.co.kr/images/27813-6-1645489923608.jpg">
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-main-visual__slide-item swiper-slide-duplicate swiper-slide-duplicate-active"
+                                                data-swiper-slide-index="0" style="width: 1012px;"><a
+                                                    href="https://www.welaaa.com/audio/curation?id=1359"
+                                                    class="w-main-visual__slide-link">
+                                                    <div class="w-main-visual__slide-thumbnail"><img
+                                                            class="swiper-lazy swiper-lazy-loaded"
+                                                            src="https://static.welaaa.co.kr/images/28426-6-1648772548677.jpg">
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        <div
+                                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                                tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 5"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 7"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 8"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 9"></span></div><span
+                                            class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-main-continue-container">
+                                <div class="w-container">
+                                    <div class="w-main__title--left">
+                                        <h3 class="w-main__title-h3">최근 재생 오디오북</h3>
+                                    </div>
+                                </div>
+                                <div class="w-container--swiper">
+                                    <div class="w-main-continue__swiper swiper-pagination--hidden">
+                                        <div
+                                            class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide w-audio-continue__item swiper-slide-visible swiper-slide-active"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                class="swiper-lazy swiper-lazy-loaded"
+                                                                src="">
+                                                        </div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">웰씽킹
+                                                            </p>
+                                                            <p class="w-audio-continue__text-teacher">켈리 최</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item swiper-slide-visible swiper-slide-next"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                class="swiper-lazy swiper-lazy-loaded"
+                                                                src="https://static.welaaa.co.kr/images/18807-4-1615185214083.png">
+                                                        </div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">데일
+                                                                카네기 자기관리론</p>
+                                                            <p class="w-audio-continue__text-teacher">데일 카네기</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/9399-4-1596586983563"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">넛지
+                                                            </p>
+                                                            <p class="w-audio-continue__text-teacher">캐스 R. 선스타인, 리차드 탈러
+                                                            </p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/8644-4-1592554743665.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">데일
+                                                                카네기 인간관계론</p>
+                                                            <p class="w-audio-continue__text-teacher">데일 카네기</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22354-4-1626144738549.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부의
+                                                                인문학</p>
+                                                            <p class="w-audio-continue__text-teacher">브라운스톤</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/27104-4-1640134452719.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부의
+                                                                체인저 1</p>
+                                                            <p class="w-audio-continue__text-teacher">김장섭</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/27326-4-1640841840788.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">
+                                                                비전공자를 위한 이해할 수 있는 IT 지식</p>
+                                                            <p class="w-audio-continue__text-teacher">최원영</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22964-4-1626150381850.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부의
+                                                                시나리오</p>
+                                                            <p class="w-audio-continue__text-teacher">오건영</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22328-4-1626144707036.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부의
+                                                                본능</p>
+                                                            <p class="w-audio-continue__text-teacher">브라운스톤</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22308-4-1626144683069.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">한국의
+                                                                젊은 부자들</p>
+                                                            <p class="w-audio-continue__text-teacher">이신영</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22340-4-1626144721613.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부의
+                                                                추월차선</p>
+                                                            <p class="w-audio-continue__text-teacher">엠제이 드마코 </p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide w-audio-continue__item"
+                                                    style="width: 256.667px; margin-right: 10px;">
+                                                    <div class="w-audio-continue__content">
+                                                        <div class="w-audio-continue__thumbnail cursor--pointer"><img
+                                                                data-src="https://static.welaaa.co.kr/images/22795-4-1626145305404.jpg"
+                                                                class="swiper-lazy"></div>
+                                                        <div class="w-audio-continue__text">
+                                                            <p class="w-audio-continue__text-title cursor--pointer">부자는
+                                                                매일 아침 경제기사를 읽는다</p>
+                                                            <p class="w-audio-continue__text-teacher">임현우</p>
+                                                        </div>
+                                                        <div class="w-audio-continue__link"><img
+                                                                src="/static/images/icons/ic-play-green.png" alt=""
+                                                                class="w-audio-continue__button-image cursor--pointer">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                                <span class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                                    tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 2"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 3"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 4"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 5"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 6"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 7"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 8"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 9"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 10"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 11"></span><span
+                                                    class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                    aria-label="Go to slide 12"></span></div><span
+                                                class="swiper-notification" aria-live="assertive"
+                                                aria-atomic="true"></span>
+                                        </div>
+                                    </div>
+                                    <div style="position: relative;">
+                                        <div class="swiper-button-next--1024" style="right: -60px; top: -84px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-container--swiper">
+                                <div class="w-audio__audio-book-head">
+                                    <h3 class="w-main__title-h3">
+                                        <pre class="recommend-title--pre">최민지님
+좋아할 오디오북, 저희가 찾았어요!</pre>
+                                    </h3>
+                                </div>
+                                <div class="swiper-container--padding-bottom30--pc mobile-pagination--hidden">
+                                    <div
+                                        class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide w-audio__audio-book-content-item swiper-slide-visible swiper-slide-active"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9892">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img
+                                                                    class="swiper-lazy swiper-lazy-loaded" alt=""
+                                                                    src="https://static.welaaa.co.kr/images/28229-2-1647909718661.png">
+                                                            </div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">유재석은 알고 당신은 모르는 말투의 디테일!</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item swiper-slide-visible swiper-slide-next"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9749">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img
+                                                                    class="swiper-lazy swiper-lazy-loaded" alt=""
+                                                                    src="https://static.welaaa.co.kr/images/27676-2-1643958998882.jpg">
+                                                            </div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">어제보다 확실하게 더 나은 내가 되는 법</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item swiper-slide-visible"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9898">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img
+                                                                    class="swiper-lazy swiper-lazy-loaded" alt=""
+                                                                    src="https://static.welaaa.co.kr/images/28234-2-1647910247977.png">
+                                                            </div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">아플수록 단단해지는 당신은 사장이다</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9777">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/27746-2-1644818528071.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">“이 책 한 권이면 지금 당신이 있는 곳 어디에서나 불안을
+                                                            극복하고 마음의 평화를 이룰 수 있다!”</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9530">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/27140-2-1640218507353.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">게임 폐인은 어떻게 행정고시와 입법고시에 동시 합격했을까?
+                                                        </p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=2758">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/22390-2-1626144782635.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">국경과 세대, 지위를 초월해 전 세계 독자를 사로잡은
+                                                            성공학서</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9753">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/27689-2-1644295223895.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">당신을 특별하게 만드는 인생 특강</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=5369">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/22477-2-1626144891277.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">베스트셀러 『더 해빙』 이서윤이 말하는 운을 만드는 법칙
+                                                        </p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9533">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/27279-2-1640584141266.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">어른을 위한 가장 지적인 대화법</p>
+                                                    </div>
+                                                </a></div>
+                                            <div class="swiper-slide w-audio__audio-book-content-item"
+                                                style="width: 156.667px; margin-right: 10px;"><a
+                                                    href="/audio/detail?audioId=9766">
+                                                    <div class="w-new-book">
+                                                        <div class="w-new-book__thumbnail-wrap">
+                                                            <div class="w-new-book__thumbnail"><img class="swiper-lazy"
+                                                                    data-src="https://static.welaaa.co.kr/images/27763-2-1644920525913.jpg"
+                                                                    alt=""></div>
+                                                        </div>
+                                                        <p class="w-new-book__subtitle">“어떻게 살고 어떻게 죽을 것인가?” 특별한 인생 수업!
+                                                        </p>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                        <div
+                                            class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                            <span class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                                tabindex="0" role="button" aria-label="Go to slide 1"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 3"></span><span
+                                                class="swiper-pagination-bullet" tabindex="0" role="button"
+                                                aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                                                tabindex="0" role="button" aria-label="Go to slide 5"></span></div><span
+                                            class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <style>
+                                .bookbox-wrapper * {
+                                    box-sizing: border-box;
+                                }
+
+                                .swiper-slide.swiper-slide-active .bookbox-title,
+                                .swiper-slide.swiper-slide-active .bookbox-text {
+                                    transition: opacity 1.5s ease 0.2s !important;
+                                    opacity: 1 !important;
+                                }
+
+                                .bookbox-wrapper .swiper-button-prev,
+                                .bookbox-wrapper .swiper-button-next {
+                                    top: 35% !important;
+                                }
+                            </style>
+                            <div class="w-container">
+                                <div class="w-audio__audio-book">
+                                    <div class="w-flex-between">
+                                        <h2 class="w-main__title-h2">윌라 오디오북</h2><a href="/audio/list"
+                                            class="w-content--mobile w-main__link-view-all-sm"><span>전체 보기</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-container--swiper">
+                                <div class="w-page__category">
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="800">이달의 오디오북</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="058">웹소설</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="028">소설</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="010">인문</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="011">경제·경영</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="056">어린이</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="012">자기계발</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="059">역사</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="055">유아</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="057">청소년</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="013">시/에세이</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="999">매거진</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="099">사회·정치</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="014">가정·실용</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="029">예술</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="030">과학</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="097">종교</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="048">영어 오디오북</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="096">외국어</button><span></span></div>
+                                    <div class="w-category-item-wrap"><button class="w-category-item"
+                                            data-ccode="050">북리뷰</button><span></span></div>
+                                </div>
+                            </div>
+                            <div class="w-container" style="margin-top:40px"><a href="/audio/list"
+                                    class="w-main__link-view-all w-flex"><span>오디오북 전체보기</span></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="Footer__Container-sc-1f54doz-0 jUUnRd">
+                <div class="Footer__BorderDiv-sc-1f54doz-1 jLdctV">
+                    <section class="Footer__LinkWrapper-sc-1f54doz-2 cajkXs">
+                        <div class="Footer__LogoLinkWrapper-sc-1f54doz-3 fkHRDc"><img
+                                src="https://static.welaaa.co.kr/static/main-renew/img-footer-logo.svg"
+                                alt="img-footer-logo.svg" loading="lazy" class="Footer__LogoImage-sc-1f54doz-4 gEZPOO">
+                            <section class="Footer__LinkSection-sc-1f54doz-5 eUoozT">
+                                <section class="Footer__LinkList-sc-1f54doz-6 cRXtwB"><a
+                                        href="https://static.welaaa.co.kr/app-docs/terms.html" target="_blank"
+                                        rel="noreferrer" class="Footer__A-sc-1f54doz-7 lcEMgd">이용약관</a><a
+                                        href="https://static.welaaa.co.kr/app-docs/privacy_statement.html"
+                                        target="_blank" rel="noreferrer" class="Footer__A-sc-1f54doz-7 diukAJ">개인정보
+                                        처리방침</a><a href="/support/partnership" target="_blank" rel="noreferrer"
+                                        class="Footer__A-sc-1f54doz-7 lcEMgd">제휴 문의</a><a
+                                        href="/support/enterprise-promotion" target="_blank" rel="noreferrer"
+                                        class="Footer__A-sc-1f54doz-7 lcEMgd">B2B 멤버십 안내</a><a
+                                        href="https://smartstore.naver.com/welaaa/category/3b13e5e6f3e14a19b32a887bcaf0ba65?cp=1"
+                                        target="_blank" rel="noreferrer" class="Footer__A-sc-1f54doz-7 lcEMgd">오디오북
+                                        카드</a><a href="https://welaaa.notion.site/d479ab4f0dfd4f0d8cbd73e8fa6d1dad"
+                                        target="_blank" rel="noreferrer" class="Footer__A-sc-1f54doz-7 lcEMgd">인재 채용</a>
+                                </section>
+                            </section>
+                        </div>
+                        <section class="Footer__IconSectionDesktop-sc-1f54doz-8 fMkydR"><a
+                                href="https://blog.naver.com/with_welaaa" target="_blank" rel="noreferrer"
+                                class="Footer__IconLink-sc-1f54doz-11 lpvHeR"></a><a
+                                href="https://www.instagram.com/welaaa_bookclub/" target="_blank" rel="noreferrer"
+                                class="Footer__IconLink-sc-1f54doz-11 koBVwd"></a><a
+                                href="https://www.facebook.com/welaaaofficial" target="_blank" rel="noreferrer"
+                                class="Footer__IconLink-sc-1f54doz-11 bGHLVV"></a><a
+                                href="https://www.youtube.com/channel/UCmZiHU5N0BT3K8oiDGT9tLg" target="_blank"
+                                rel="noreferrer" class="Footer__IconLink-sc-1f54doz-11 ijwLyB"></a></section>
+                    </section>
+                    <section class="Footer__AccordionSection-sc-1f54doz-9 bcTA-dL">
+                        <div class="FooterAccordion__Container-sc-1ba1e3r-0 eiIBCA">
+                            <div class="FooterAccordion__Header-sc-1ba1e3r-1 kMPJv footer-accordion-header">㈜ 인플루엔셜 사업자
+                                정보<div class="FooterAccordion__Button-sc-1ba1e3r-2 dpNlFr"><img
+                                        src="/static/images/icons/ico-arrow-drop-down.svg"
+                                        alt="ico-arrow-drop-down.png"></div>
+                            </div>
+                            <div class="FooterAccordion__ContentsWrapper-sc-1ba1e3r-3 kxcHyG">
+                                <div class="FooterAccordion__Contents-sc-1ba1e3r-4 cANJl footer-accordion-content">
+                                    <p class="Footer__TextDesktop-sc-1f54doz-13 kzgCto">㈜ 인플루엔셜 &nbsp;<span
+                                            class="divider">|</span>&nbsp; 대표이사: 문태진<br>사업자등록번호 220-87-65006 &nbsp;<span
+                                            class="divider">|</span>&nbsp; 통신판매업 신고번호 제 2021-서울서초-2342호<br>주소 : 서울특별시
+                                        서초구 서초대로 398, BnK디지털타워 11층 &nbsp;<span class="divider">|</span>&nbsp; FAX :
+                                        02-720-1043</p>
+                                    <p style="padding-top:10px" class="Footer__TextDesktop-sc-1f54doz-13 kzgCto">고객센터
+                                        :<span><a href="tel:02-6206-3240">02-6206-3240</a></span>,
+                                        <!-- --> <span> <a href="mailto:cs@welaaa.com">cs@welaaa.com</a></span>(평일 10:00
+                                        AM ~ 17:00 PM, 점심시간 12:00 ~ 14:00 PM 및 공휴일 제외) <br>마케팅, 제휴 등 기타문의 :
+                                        <!-- --> <span> <a href="mailto:cs@welaaa.com">welaaa@welaaa.com</a></span></p>
+                                    <p class="Footer__TextMobile-sc-1f54doz-12 eRcYVn">㈜ 인플루엔셜 &nbsp;<span
+                                            class="divider">|</span>&nbsp; 대표이사: 문태진 <br>사업자등록번호 220-87-65006 <br>통신판매업
+                                        신고번호 제 2021-서울서초-2342호 <br>주소 : 서울특별시 서초구 서초대로 398, BnK디지털타워 11층 <br>FAX :
+                                        02-720-1043</p>
+                                    <p class="Footer__TextMobile-sc-1f54doz-12 eRcYVn">고객센터 :
+                                        <!-- --> <span><a href="tel:02-6206-3240">02-6206-3240</a></span>,
+                                        <!-- --> <span> <a href="mailto:cs@welaaa.com">cs@welaaa.com</a></span> <br>(평일
+                                        10:00 AM ~ 17:00 PM, 점심시간 12:00 ~ 14:00 PM 및 공휴일 제외) <br>마케팅, 제휴 등 기타문의 :
+                                        <!-- --> <span> <a href="mailto:welaaa@welaaa.com">welaaa@welaaa.com</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="Footer__IconSectionMobile-sc-1f54doz-10 bswoIA"><a
+                            href="https://blog.naver.com/with_welaaa" target="_blank" rel="noreferrer"
+                            class="Footer__IconLink-sc-1f54doz-11 lpvHeR"></a><a
+                            href="https://www.instagram.com/welaaa_bookclub/" target="_blank" rel="noreferrer"
+                            class="Footer__IconLink-sc-1f54doz-11 koBVwd"></a><a
+                            href="https://www.facebook.com/welaaaofficial" target="_blank" rel="noreferrer"
+                            class="Footer__IconLink-sc-1f54doz-11 bGHLVV"></a><a
+                            href="https://www.youtube.com/channel/UCmZiHU5N0BT3K8oiDGT9tLg" target="_blank"
+                            rel="noreferrer" class="Footer__IconLink-sc-1f54doz-11 ijwLyB"></a></section>
+                </div>
+                <p class="Footer__Text-sc-1f54doz-14 htLjrC">Copyright (주)인플루엔셜. All Rights Reserved.</p><span
+                    itemscope="" itemtype="http://schema.org/Organization">
+                    <link itemprop="url" href="https://www.welaaa.com/"><a itemprop="sameAs"
+                        href="https://blog.naver.com/with_welaaa"></a><a itemprop="sameAs"
+                        href="https://www.instagram.com/welaaa_bookclub"></a><a itemprop="sameAs"
+                        href="https://www.youtube.com/c/welaaasmart"></a><a itemprop="sameAs"
+                        href="https://www.facebook.com/welaaaofficial"></a><a itemprop="sameAs"
+                        href="https://play.google.com/store/search?q=%EC%9C%8C%EB%9D%BC%EC%98%A4%EB%94%94%EC%98%A4%EB%B6%81&amp;c=apps"></a><a
+                        itemprop="sameAs"
+                        href="https://apps.apple.com/kr/app/%EC%9C%8C%EB%9D%BC-%EC%98%A4%EB%94%94%EC%98%A4%EB%B6%81/id1250319483"></a></span>
+            </footer>
+        </div>
+        <section class="AppInstallModal__Container-sc-hfl18t-0 bNsIEU"></section>
+        <script src="/static/scripts/nprogress.js"></script>
+    </div>
+
+</body>
+
+</html>
